@@ -5,9 +5,7 @@ const fromCurr = document.querySelector(".from select");
 const toCurr = document.querySelector(".to select");
 const msg = document.querySelector(".msg");
 
-
-
-// Access the data that i.s counrty list from another File(country.js)
+// Access the data that i.s country list from another File(country.js)
 for( let select of dropdown){
     for (currcode in countryList){
         let newOption = document.createElement("option");
@@ -24,7 +22,7 @@ for( let select of dropdown){
         updateflag(evt.target);
     });
 }
-
+// function for assign the value 1
 const uptaeExchangeRate = async()=>{
     let amount = document.querySelector(".amount input");
     let amtvalue = amount.value;
